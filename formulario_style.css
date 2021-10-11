@@ -1,0 +1,87 @@
+/*-------------Geral-Layout-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body{
+    background-color: #ecf0f1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*-------------Voltar-------------*/
+
+.voltar{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    padding: 10px 13px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+}
+
+.voltar:hover{
+    background-color: #07273dde;
+}
+
+/*-------------Formulario-------------*/
+
+h1{
+    background-color: #0a3d62de;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+legend{
+    color: #07314efb;
+    font-size: 22px;
+    margin: 20px 0px 20px 40px;
+    width: 60%;
+    border-bottom: 2px solid #0a3d6277;
+}
+
+.nome{
+    border: 2px solid #0a3d62d7;
+    padding: 5px 3px;
+    border-radius: 10px;
+}
+
+label{
+    cursor: pointer;
+}
+
+p{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.button{
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+    padding: 20px 40px;
+    border-radius: 24px;
+    outline: none;
+    border: 2px solid #0a3d6277;
+    color: #07314efb;
+    font-size: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315), -2px -2px 3px rgba(0, 0, 0, 0.315);
+}
+
+button:hover{
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.315), inset -2px -2px 3px rgba(0, 0, 0, 0.315);
+}

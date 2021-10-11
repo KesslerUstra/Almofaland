@@ -1,0 +1,197 @@
+/*-------------Geral-Layout-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.layout{
+    min-height: 100vh;
+    background-color: #ffffff;
+    align-items: flex-start;
+    display: grid;
+    grid-template-areas: 
+    "quadrados logo quadrados2"
+    "header header header"
+    ". main ."
+    "footer footer footer"
+    ;
+}
+
+/*-------------Logo-------------*/
+
+.logo{
+    z-index: 1;
+    display: flex;
+    position: relative;
+    margin: auto;
+    grid-area: logo;
+}
+
+.logo img{
+    width: 100%;
+}
+
+/*-------------Menu-------------*/
+
+header{
+    z-index: 2;
+    background-color: #ffa502;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu a{
+    font-size: 22px;
+    color: #0a3d62;
+    padding: 40px 30px;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    font-weight: 800;
+}
+
+.menu a:hover{
+    color: #116099;
+    background-color: #fad390;
+    transform: scale(1.04);
+
+}
+
+/*-------------Conteudo-------------*/
+
+main{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main h2{
+    font-size: 30px;
+    margin: 60px 0px;
+}
+
+.diferenciais{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.diferencial{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.diferencial h3{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.imagem{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e58f268f;
+}
+
+.imagem .branco{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    background-color: #fff;
+}
+
+.imagem .branco i{
+    font-size: 40px;
+}
+
+.tree{
+    color: #27ae60;
+}
+
+.tesoura{
+    color: #95a5a6;
+}
+
+.truck{
+    color: #2c3e50;
+}
+
+
+
+.titulo-pesquisa{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.pesquisa{
+    margin-bottom: 60px;
+}
+
+.pesquisa a{
+    display: inline-block;
+    padding: 30px 50px;
+    font-size: 30px;
+    color: #0a3d62;
+    border-radius: 20px;
+    border: solid 2px #0a3d62;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315), -2px -2px 3px rgba(0, 0, 0, 0.315);
+    transition: color 0.2s ease-out 0.07s, background-color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out 0.07s, background-color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out 0.07s, background-color 0.2s ease-out;
+    -webkit-transition: color 0.2s ease-out 0.07s, background-color 0.2s ease-out;
+}
+
+.pesquisa a:hover{
+    color: #fff;
+    background-color: #0a3d62;
+}
+
+/*-------------Footer-------------*/
+
+footer{
+    padding: 30px 0px;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffa502;
+    grid-area: footer;
+}
+
+footer a{
+    color: #0a3d62;
+    display: inline-block;
+    font-size: 30px;
+    transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+}
+
+footer a:hover{
+    transform: scale(1.10);
+}

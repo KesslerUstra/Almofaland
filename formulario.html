@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Primária</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="formulario_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.5.3/dist/sweetalert2.min.css" />
+</head>
+
+<body>
+    <a href="index.html" class="voltar"><i class="fas fa-arrow-left"></i></a>
+    <h1>Pesquisa Primária</h1>
+    <form id="formulario-pesquisa-primaria" name="pesquisa-primaria" method="post" action="/obrigado" data-netlify="true">
+        <legend>Nome</legend>
+        <p>
+            <label>
+                <input type="text" name="Nome" class="nome" required="required">
+            </label>
+        </p>
+        <legend>Sexo</legend>
+        <p>
+            <label>
+                <input type="radio" name="Sexo" value="Masculino" required="required"> Masculino
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Sexo" value="Feminino"> Feminino
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Sexo" value="Outro"> Outro
+            </label>
+        </p>
+        <legend>Idade</legend>
+        <p>
+            <label>
+                <input type="radio" name="Idade" value="Menor que 18 anos" required="required"> Menor que 18 anos
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Idade" value="18 a 30 anos"> 18 a 30 anos
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Idade" value="31 a 45 anos"> 31 a 45 anos
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Idade" value="Mais de 45 anos"> Mais de 45 anos
+            </label>
+        </p>
+        <legend>Até quanto tempo você estaria disposto a esperar pela entrega?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Entrega" value="Até uma semana" required="required"> Até uma semana
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Entrega" value="Até duas semanas"> Até duas semanas
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Entrega" value="Até três semanas"> Até três semanas
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Entrega" value="Mais de três semanas"> Mais de três semanas
+            </label>
+        </p>
+        <legend>Você tem interesse em almofadas personalizadas?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Personalizadas" value="Sim" required="required"> Sim
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Personalizadas" value="Não"> Não
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Personalizadas" value="Talvez"> Talvez
+            </label>
+        </p>
+        <legend>Quão importante é para você que um produto seja ecológico?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Ecológico" value="Tanto faz" required="required"> Tanto faz
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Ecológico" value="Me importo pouco"> Me importo pouco
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Ecológico" value="É muito importante para mim"> É muito importante para mim
+            </label>
+        </p>
+        <legend>Você gostaria de ter uma coleção personalizada de almofadas?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Coleção-personalizada" value="Sim" required="required"> Sim
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Coleção-personalizada" value="Não"> Não
+            </label>
+        </p>
+        <legend>Você gosta de ambientes bem decorados?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Ambientes-decorados" value="Sim" required="required"> Sim
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Ambientes-decorados" value="Não"> Não
+            </label>
+        </p>
+        <legend>Para você, quão importante são almofadas em decorações?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Importante-almofadas-decorações" value="Tanto faz" required="required"> Tanto
+                faz
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Importante-almofadas-decorações" value="Acho legal"> Acho legal
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Importante-almofadas-decorações" value="É muito importante"> É muito
+                importante
+            </label>
+        </p>
+        <legend>Com qual frequência você compra almofadas?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Compra-almofadas" value="Nunca" required="required"> Nunca
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Compra-almofadas" value="A cada 10 anos"> A cada 10 anos
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Compra-almofadas" value="De 5 em 5 anos"> De 5 em 5 anos
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Compra-almofadas" value="Entre 1 e 4 anos"> Entre 1 e 4 anos
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Compra-almofadas" value="Estou sempre comprando"> Estou sempre comprando
+            </label>
+        </p>
+        <legend>Quanto você normalmente paga por uma almofada?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Paga-almofadas" value="Menos de 50 reais" required="required"> Menos de 50
+                reais
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Paga-almofadas" value="Entre 50 e 100 reais"> Entre 50 e 100 reais
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Paga-almofadas" value="Mais de 100 reais"> Mais de 100 reais
+            </label>
+        </p>
+        <legend>Até quanto você pagaria por uma almofada personalizada e ecológica?</legend>
+        <p>
+            <label>
+                <input type="radio" name="Paga-almofadas-ecologicas" value="Menos de 50 reais" required="required">
+                Menos de 50 reais
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Paga-almofadas-ecologicas" value="Entre 50 e 100 reais"> Entre 50 e 100 reais
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="Paga-almofadas-ecologicas" value="Mais de 100 reais"> Mais de 100 reais
+            </label>
+        </p>
+        <div class="button"><button type="submit">Enviar</button></div>
+    </form>
+</body>
+</html>
