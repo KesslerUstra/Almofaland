@@ -42,21 +42,6 @@ h1{
     color: #fff;
 }
 
-@media screen and (max-width: 500px){
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    .voltar{
-        position: inherit;
-        display: inline-block;
-        width: 40px;
-        margin: auto;
-        height: 40px;
-        margin-bottom: 20px;
-    }
-}
-
 legend{
     color: #07314efb;
     font-size: 22px;
@@ -69,10 +54,19 @@ legend{
     border: 2px solid #0a3d62d7;
     padding: 5px 3px;
     border-radius: 10px;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nome:focus{
+    width: 130%;
+    border-color: #1278c2d7;
 }
 
 label{
     cursor: pointer;
+    display: inline-block;
 }
 
 p{
@@ -100,4 +94,68 @@ button{
 
 button:hover{
     box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.315), inset -2px -2px 3px rgba(0, 0, 0, 0.315);
+}
+
+p:nth-child(n+3) input{
+    cursor: pointer;
+    vertical-align: middle;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #0097e6;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+}
+
+p:nth-child(n+3) input:focus{
+    box-shadow: 1px 1px 5px #0096e67c,-1px -1px 5px #0096e67c;
+}
+
+p:nth-child(n+3) input::before{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #0097e6;
+    border-radius: 50%;
+    content: '';
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+p:nth-child(n+3) input:checked:before{
+    opacity: 1;
+}
+
+#formulario-pesquisa-primaria{
+    animation: aparecer 0.6s ease-in;
+}
+
+@media screen and (max-width: 500px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .voltar{
+        position: inherit;
+        display: inline-block;
+        width: 40px;
+        margin: auto;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
