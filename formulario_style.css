@@ -96,7 +96,7 @@ button:hover{
     box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.315), inset -2px -2px 3px rgba(0, 0, 0, 0.315);
 }
 
-p:nth-child(n+3) input{
+.radio{
     cursor: pointer;
     vertical-align: middle;
     appearance: none;
@@ -108,11 +108,11 @@ p:nth-child(n+3) input{
     outline: none;
 }
 
-p:nth-child(n+3) input:focus{
+.radio:focus{
     box-shadow: 1px 1px 5px #0096e67c,-1px -1px 5px #0096e67c;
 }
 
-p:nth-child(n+3) input::before{
+.radio::before{
     position: absolute;
     width: 8px;
     height: 8px;
@@ -125,7 +125,7 @@ p:nth-child(n+3) input::before{
     transition: opacity 0.2s ease-in;
 }
 
-p:nth-child(n+3) input:checked:before{
+.radio:checked:before{
     opacity: 1;
 }
 
