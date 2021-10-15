@@ -131,7 +131,12 @@ button:hover{
 
 #formulario-pesquisa-primaria{
     animation: aparecer 0.6s ease-in;
+    -o-animation: aparecer 0.6s ease-in;
+    -moz-animation: aparecer 0.6s ease-in;
+    -webkit-animation: aparecer 0.6s ease-in;
 }
+
+/*-------------Media Rule-------------*/
 
 @media screen and (max-width: 500px){
     header{
@@ -147,6 +152,8 @@ button:hover{
         margin-bottom: 20px;
     }
 }
+
+/*-------------Keyframes-------------*/
 
 @keyframes aparecer{
     0%{
